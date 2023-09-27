@@ -15,12 +15,13 @@ namespace Leviatas.Web.Controllers
 
         public IActionResult Index()
         {
-            _logger.LogError("Probando erro log");
+            _logger.Log(LogLevel.Error, "Hubo un problema");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            _logger.Log(LogLevel.Error, "Hubo un problema en privacy");
             return View();
         }
 
