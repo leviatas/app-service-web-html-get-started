@@ -15,6 +15,7 @@ namespace Leviatas.Web.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogError("Probando erro log");
             return View();
         }
 
